@@ -3,10 +3,10 @@ using namespace std;
 
 int main() {
 
-	double cleaning_carpet_small_room {34.78};
-	double cleaning_carpet_large_room {54.89};
-	double tax {0.06};
-	int valid_days {30};
+	const double cleaning_carpet_small_room {34.78};
+	const double cleaning_carpet_large_room {54.89};
+	const double tax {0.06};
+	const int valid_days {30};
 	 
 	cout << "Hi, This is Hotel's Carpet Cleaning Service!";
 
