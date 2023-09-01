@@ -1,0 +1,12 @@
+This is a simple C++ code for Hotel's Carpet Cleaning Service.
+
+It simply asks the user for number of large and small rooms they would like to get cleaned and uses the
+already set values it calcualtes the cost and tax. Finally giving the uses the final estimate.
+
+It uses these consespts:
+
+input output preprocessor
+standard namespace
+cout/sin
+int variable
+constant
