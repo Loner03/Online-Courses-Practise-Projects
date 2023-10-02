@@ -3,19 +3,20 @@ using namespace std;
 
 int main() {
 
-	const double cleaning_carpet_small_room {34.78};
-	const double cleaning_carpet_large_room {54.89};
-	const double tax {0.06};
-	const int valid_days {30};
-	 
-	cout << "Hi, This is Hotel's Carpet Cleaning Service!";
+	const double cleaning_carpet_small_room{ 34.78 };
+	const double cleaning_carpet_large_room{ 54.89 };
+	const double tax{ 0.06 };
+	const int valid_days{ 30 };
 
-	cout << "\n\nHow many Large rooms would you like to be cleaned: ";
+	cout << "Welcome To Hotel's Carpet Cleaning Service!" << endl;
+	cout << "___________________________________________" << endl;
+
+	cout << "\nHow many Large rooms would you like to be cleaned: ";
 	int Large_Rooms{ 0 };
 	cin >> Large_Rooms;
 
 	cout << "\nHow many Small rooms would you like to be cleaned: ";
-	int Small_Rooms {0};
+	int Small_Rooms{ 0 };
 	cin >> Small_Rooms;
 
 	cout << "\nEstimate For Carpet Cleaning Service\n";
@@ -30,7 +31,7 @@ int main() {
 	cout << "Current Total Estimate: $" << (Large_Rooms * cleaning_carpet_large_room) + (Small_Rooms * cleaning_carpet_small_room) + (Large_Rooms * cleaning_carpet_large_room * tax) + (Small_Rooms * cleaning_carpet_small_room * tax) << endl;
 	cout << "This estimate is only valid for the next " << valid_days << " days" << endl;
 
-	cout << "\n\nThanks For Using Loner03 Services!" << endl;
+	cout << "\nThanks For Using Loner03 Services!" << endl;
 	cout << "__________________________________" << endl;
 
 
