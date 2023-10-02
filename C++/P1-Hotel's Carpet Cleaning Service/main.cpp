@@ -30,6 +30,9 @@ int main() {
 	cout << "Current Total Estimate: $" << (Large_Rooms * cleaning_carpet_large_room) + (Small_Rooms * cleaning_carpet_small_room) + (Large_Rooms * cleaning_carpet_large_room * tax) + (Small_Rooms * cleaning_carpet_small_room * tax) << endl;
 	cout << "This estimate is only valid for the next " << valid_days << " days" << endl;
 
+	cout << "\n\nThanks For Using Loner03 Services!" << endl;
+	cout << "__________________________________" << endl;
+
 
 	cout << endl;
 	return 0;
