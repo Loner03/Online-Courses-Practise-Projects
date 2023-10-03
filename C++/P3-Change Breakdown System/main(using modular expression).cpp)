@@ -1,0 +1,71 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+
+	cout << "Welcome To Change Calulating System" << endl;
+	cout << "-----------------------------------" << endl;
+
+	cout << "___________________________________________________" << endl;
+	cout << "*******************IMPORTAT NOTE*******************" << endl;
+	cout << "Converting Capabalitites Are Limited To CAD For Now" << endl;
+	cout << "---------------------------------------------------" << endl;
+
+	cout << "\nValue Breakdown For Each Denomination In Cents" << endl;
+	cout << "----------------------------------------------" << endl;
+
+	const int Dollar_To_Cents{ 100 };
+	cout << "1 Dollar = " << Dollar_To_Cents << " Cents" << endl;
+
+	const int Quarters_To_Cents{ 25 };
+	cout << "1 Quarter = " << Quarters_To_Cents << " Cents" << endl;
+
+	const int Dimes_To_Cents{ 10 };
+	cout << "1 Dime = " << Dimes_To_Cents << " Cents" << endl;
+
+	const int Nickle_To_Cents{ 5 };
+	cout << "1 Nickle = " << Nickle_To_Cents << " Cents" << endl;
+
+	const int Pennie_To_Cents{ 1 };
+	cout << "1 Pennie = " << Pennie_To_Cents << " Cents" << endl;
+
+	cout << "\nPlease Input The Amount(In Cents Only) For Change Breakdown: ";
+	int Amount;
+	cin >> Amount;
+
+	int Balance;
+
+	int Dollars;
+	Dollars = Amount / Dollar_To_Cents;
+	Balance = Amount % Dollar_To_Cents;
+
+	int Quarters;
+	Quarters = Balance / Quarters_To_Cents;
+	Balance %= Quarters_To_Cents;
+
+	int Dimes;
+	Dimes = Balance / Dimes_To_Cents;
+	Balance %=  Dimes_To_Cents;
+
+	int Nickles;
+	Nickles = Balance / Nickle_To_Cents;
+	Balance %= Nickle_To_Cents;
+
+	int Pennies;
+	Pennies = Balance;
+
+	cout << "\nThe Change Breakdown For " << Amount << " Cents Is As Follows:" << endl;
+	cout << "Dollars = " << Dollars << endl;
+	cout << "Quarters = " << Quarters << endl;
+	cout << "Dimes = " << Dimes << endl;
+	cout << "Nickels = " << Nickles << endl;
+	cout << "Pennies = " << Pennies << endl;
+
+	cout << "\nThanks For Using Loner03 Services!" << endl;
+	cout << "__________________________________" << endl;
+
+
+
+	cout << endl;
+	return 0;
+}
