@@ -18,9 +18,9 @@ int main() {
 		cout << "Just Before We Start The Following Are The Current Cost And Shipping Limits: -" << endl;
 		cout << "\n*Base Cost = $2.50" << endl;
 		cout << "\n*Lenth, Width and Height Indidually Should Not Exceed 10 Inches Each." << endl;
-		cout << "\n*A 10% Surcharge Will Be Automatically Applied To The Base Anmount If The Package " << endl;
+		cout << "\n*A 10% Surcharge Will Be Automatically Applied To The Final Anmount If The Package " << endl;
 		cout << "Volume Is More Than 100 Cubic Inches." << endl;
-		cout << "\n*A 25% Surcharge Will Be Automatically Applied To The Base Anmount If The Package " << endl;
+		cout << "\n*A 25% Surcharge Will Be Automatically Applied To The Final Anmount If The Package " << endl;
 		cout << "Volume Is More Than 500 Cubic Inches." << endl;
 		cout << "===================================================================================" << endl;
 
