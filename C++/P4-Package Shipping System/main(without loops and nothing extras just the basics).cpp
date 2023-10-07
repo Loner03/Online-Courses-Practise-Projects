@@ -1,7 +1,11 @@
 #include <iostream>
+#include <iomanip>
+
 using namespace std;
 
 int main() {
+
+	cout << fixed << setprecision(2);
 
 	cout << "Welcome, To The Loner03 Package Shipping System!" << endl;
 	cout << "------------------------------------------------" << endl;
