@@ -22,6 +22,8 @@ int main() {
 		cout << "Volume Is More Than 100 Cubic Inches." << endl;
 		cout << "\n*A 25% Surcharge Will Be Automatically Applied To The Final Anmount If The Package " << endl;
 		cout << "Volume Is More Than 500 Cubic Inches." << endl;
+		cout << "\n*A 13% Tax Will Be Automatically Applied To The Final Anmount But PreTax Cost Will " << endl;
+		cout << "Also Be Provided" << endl;
 		cout << "===================================================================================" << endl;
 
 		cout << "\nNow, That We Have You Up To Date. Let's Start With The Dimensions OF Your Package." << endl;
@@ -43,30 +45,31 @@ int main() {
 			cout << "\n* Height -> " << height << " Inches" << endl;
 
 			int volume{ lenth * width * height };
+			const double tax{0.13};
+			const double baseCost{ 2.5 };
+			double cost{ volume * baseCost };
 
 			cout << "\n* Volume -> " << volume << " Cubic Inches" << endl;
 
 			if (volume <= 100) {
 
-				double cost{ volume * 2.5 };
 				cout << "\n* Cost(PreTax) -> $ " << cost << endl;
 			}
 			
 			else if (volume > 100 && volume <= 500)
 			{
-				double cost{ volume * 2.5 };
-				double surchangerdCost{cost}; 
-				surchangerdCost += cost*0.10;
-				cout << "\n* Cost(PreTax) -> $ " << surchangerdCost << endl;
+				cost += cost*0.10;
+				cout << "\n* Cost(PreTax) -> $ " << cost << endl;
 			}
 
 			else
 			{
-				double cost{ volume * 2.5 };
-				double surchangerdCost{cost}; 
-				surchangerdCost += cost * 0.25;
-				cout << "\n* Cost(PreTax) -> $ " << surchangerdCost << endl;
+				cost += cost * 0.25;
+				cout << "\n* Cost(PreTax) -> $ " << cost << endl;
 			}
+
+			cost += cost * tax;
+			cout << "\n* Cost(PostTax) -> $ " << cost << endl;
 
 			cout << "\n* Validity -> OCT 15, 2023" << endl;
 			cout << "\n===============================\n" << endl;
